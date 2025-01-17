@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffffff, #feddad);
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(109, 67, 0);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+   
+    color: rgb(245, 244, 241);
+    text-shadow: 0 0 10px rgb(5, 5, 5);
+}
+
+.contact-section {
+    text-align: center;
+    
+    margin-top: 10px;
+    
+}
+
+.contact-btn {
+    margin-top: 10px;
+  
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+   
+    background-color: rgb(109, 67, 0);
+ 
+    border-radius: 5px;
+   
+}
+
+.contact-link:hover {
+    background-color: #b74b4b;
+    
+}
+
+.phone-number {
+    display: none;
+   
+    color: rgb(6, 6, 6);
+   
+    margin-left: 10px;
+   
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: calc(90vh - 50px);
+    
+}
+
+.image-container {
+    margin-right: 20px;
+  
+}
+
+.profile-image {
+    width: 250px;
+   
+    height: auto;
+    
+    border-radius: 50%;
+   
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+  
+    max-width: 600px;
+    
+    text-align: center;
+   
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1rem;
+   
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+  
+    gap: 10px;
+    
+}
+
+.social-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    
+    height: 50px;
+   
+    background-color: transparent;
+   
+    border: 2px solid rgb(109, 67, 0);
+   
+    border-radius: 50%;
+  
+    transition: background-color 0.3s, transform 0.3s;
+    
+    color: rgb(109, 67, 0);
+   
+}
+
+.social-button:hover {
+    background-color: rgb(109, 67, 0);
+    
+    color: white;
+   
+    transform: scale(1.1);
+    
+}
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(109, 67, 0);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    transition: background-color 0.3s, transform 0.3s;
+   
+    margin-top: 20px;
+}
+
+.email-button:hover {
+    background-color: #b74b4b;
+ 
+    transform: scale(1.05);
+    
+}
+
+.skills-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-container h2 {
+    font-size: 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills i {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+/* Responsividade */
+@media (max-width :768px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
